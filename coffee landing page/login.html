@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Starbucks Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <!-- <img src="/img/logo.png" alt="Starbucks Logo"> -->
+        <!-- Navigation Menu (if needed) -->
+    </header>
+
+    <main>
+        <section class="login-form">
+            <h2>Sign In to Your Account</h2>
+            <form id="loginForm">
+                <div class="input-field">
+                    <input required="" name="email" type="email" id="emailInput" />
+                    <label>Email</label>
+                    <div class="error-message" id="emailError"></div>
+                </div>
+            
+                <div class="input-field">
+                    <input required="" name="password" type="password" id="passwordInput" />
+                    <label>Enter Password</label>
+                    <div class="error-message" id="passwordError"></div>
+                </div>
+            
+                <button type="submit" onclick="validateForm()">Sign in</button>
+                <p>Don't have account? <a href="signup.html">sign up</a></p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer Links (e.g., Privacy Policy, Social Media) -->
+    </footer>
+
+    <script>
+        function validateForm() {
+            var emailInput = document.getElementById('emailInput');
+            var passwordInput = document.getElementById('passwordInput');
+            var emailError = document.getElementById('emailError');
+            var passwordError = document.getElementById('passwordError');
+
+            var valid = true;
+
+            // Validate email
+            if (!emailInput.value.trim()) {
+                emailError.textContent = 'Email is required';
+                valid = false;
+            } else if (!isValidEmail(emailInput.value)) {
+                emailError.textContent = 'Please enter a valid email';
+                valid = false;
+            } else {
+                emailError.textContent = '';
+            }
+
+            // Validate password
+            if (!passwordInput.value.trim()) {
+                passwordError.textContent = 'Password is required';
+                valid = false;
+            } else if (passwordInput.value.length < 8) {
+                passwordError.textContent = 'Password must be at least 8 characters long';
+                valid = false;
+            } else {
+                passwordError.textContent = '';
+            }
+
+            if(valid){
+                alert('Sign in successfull!');
+            }
+
+            return valid;
+        }
+
+        function isValidEmail(email) {
+            // Basic email validation using regular expression
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
+
+</body>
+</html>

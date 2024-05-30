@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <title>Starbucks - What's New</title>
+    <link rel="stylesheet" href="whatsnew.css">
+</head>
+<body>
+    <header>
+        <img src="/img/logo.png" alt="Starbucks Logo">
+        <h2>Starbucks</h2>
+    </header>
+
+    <main>
+        <section class="whats-new">
+            <div class="container">
+                <h2>What's New!!!</h2>
+                <div class="news-items">
+                    <div class="news-item_1">
+                        <h3>Product Launches</h3>
+                        <div class="swiper-container">
+                            <div class="swiper_wrapper">
+                                <!-- Product 1 -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <img class="slide" src="img/10007.webp" alt="Product 1">
+                                        <div class="product-info">
+                                            <img src="img/10006.svg" alt="" srcset="" class="veg_logo">
+                                            <h4>Strawberry Milkshake</h4>
+                                            <span id="space">TALL(Tall Strawberry Milkshake).PER SERVE(354ml)-569Kcal</span>
+                                            <p class="price">₹ 365.<span id="paisa">50</span></p>
+                                            <button class="add_item">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 2 -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <img class="slide" src="img/10008.webp" alt="Product 2">
+                                        <div class="product-info">
+                                            <img src="img/10006.svg" alt="" srcset="" class="veg_logo">
+                                            <h4>Vanilla Milkshake</h4>
+                                            <span id="space">TALL(354ML).PER SERVE(354ml)-531Kcal</span>
+                                            <p class="price">₹ 365.<span id="paisa">50</span></p>
+                                            <button class="add_item">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 3 -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <img class="slide" src="img/10009.webp" alt="Product 3">
+                                        <div class="product-info">
+                                            <img src="img/10006.svg" alt="" srcset="" class="veg_logo">
+
+                                            <h4>Chocolate Milkshake</h4>
+                                            <span id="space">TALL(354ML).PER SERVE(354ml)-632Kcal</span>
+
+                                            <p class="price">₹ 365.<span id="paisa">50</span></p>
+                                            <button class="add_item">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 4 -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <img class="slide" src="img/10010.webp" alt="Product 4">
+                                        <div class="product-info">
+                                            <img src="img/10006.svg" alt="" srcset="" class="veg_logo">
+                                            <h4>Chocolate Brownie Cupcake</h4>
+                                            <span id="space">PER SERVE (80g)-416kcal</span>
+
+                                            <p class="price">₹ 299.<span id="paisa">25</span></p>
+                                            <button class="add_item">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Navigation Buttons -->
+                            <button class="prev" onclick="prevSlide()">&#10094</button>
+                            <button class="next" onclick="nextSlide()">&#10095</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="news-item">
+                        <h3>Customer Testimonials</h3>
+                        <p>See what our customers are saying about us!</p>
+                        <!-- Inside the news-items div -->
+                        <!-- Customer Testimonials -->
+                        <div class="testimonial">
+                            <img src="img/customer-img1.png" alt="Customer 1">
+                            <p>"I love Starbucks! Their coffee is always fresh and delicious. The atmosphere is cozy, and the staff is friendly."</p>
+                            <p class="author">- Emily Smith</p>
+                        </div>
+                        <div class="testimonial">
+                            <img src="img/customer-img1.png" alt="Customer 2">
+                            <p>"Starbucks is my go-to place for a quick pick-me-up. Their drinks are consistently great, and the service is top-notch!"</p>
+                            <p class="author">- John Doe</p>
+                        </div>
+                    </div>
+
+                    <!-- Company News -->
+                    <section class="company-news">
+                        <div class="container">
+                            <h2>Company News</h2>
+                            <div class="news-items_2">
+                                <div class="news-item">
+                                    <h3>New Product Launch</h3>
+                                    <p>Introducing our latest product: the XYZ Widget. Learn more about its features and benefits.</p>
+                                    <a href="#" class="read-more">Read More</a>
+                                </div>
+                                <div class="news-item">
+                                    <h3>Upcoming Webinar</h3>
+                                    <p>Join us for an exclusive webinar on "Digital Marketing Trends in 2024." Register now!</p>
+                                    <a href="#" class="read-more">Read More</a>
+                                </div>
+                                <div class="news-item">
+                                    <h3>Industry Award</h3>
+                                    <p>We're proud to announce that our company has been awarded the "Best Innovation of the Year" award at the Industry Excellence Awards 2024.</p>
+                                    <a href="#" class="read-more">Read More</a>
+                                </div>
+                                    
+                            </div>
+                        </div>
+                    </section>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        // JavaScript code for slider navigation
+        let slideIndex = 0;
+        showSlide(slideIndex);
+
+        function prevSlide() {
+            slideIndex--;
+            showSlide(slideIndex);
+        }
+
+        function nextSlide() {
+            slideIndex++;
+            showSlide(slideIndex);
+        }
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll(".swiper-slide");
+            if (index >= slides.length) {
+                slideIndex = 0;
+            } else if (index < 0) {
+                slideIndex = slides.length - 1;
+            }
+
+            slides.forEach(slide => {
+                slide.classList.remove("active");
+            });
+            slides[slideIndex].classList.add("active");
+            setTimeout(() => {
+                slides[slideIndex].style.transitionDelay = "0s";
+            }, 0);
+        }
+
+    </script>
+</body>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 StarBucks. All rights reserved.</p>
+    </div>
+</footer>
+</html>

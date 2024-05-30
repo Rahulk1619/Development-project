@@ -1,0 +1,204 @@
+*{
+    margin: 10px 2px 8px 11px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: #00704A;
+    padding: 5px 0px 5px 2px;
+    border-radius: 10px;
+}
+
+header div{
+    display:contents;
+}
+
+#cart-img{
+    height: 32px;
+    width: 29px;
+    display: inline-flex;
+    margin: 0% 5% 1% 40%;
+    cursor: pointer;
+}
+
+#space{
+    letter-spacing: -1.6px;
+    font-size: 11px;
+    color: rgb(185, 185, 185);
+    margin: 15px 0px 15px 0px;}
+
+.box span{
+    color: rgb(111, 111, 111);
+    font-weight: 100;
+    font-size: 13px;
+    margin: 0px 15px 0px 0px;
+}
+
+.box p{
+    font-weight: bold;
+    margin: 5px 1px 0px;
+    font-size: 14px;
+}
+
+#span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-size: 13px;
+}
+
+img {
+    border-radius: 50%;
+    height: 100px;
+    margin: 15px 10px;
+}
+
+.veg_logo{
+    height: 15px;
+    width: 9%;
+    margin: 0px;
+    border-radius: 0%;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Caffe_Americano, .Cold_coffee,.JavaChipFrappuccino,.DoubleChocolateChipFrappuccino,.CreamySpinachandCornPocket,.Cappuccino,.DoubleChocolateChipCookie{
+    background-color: #f4f4f4;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    margin: 7px 5px 9px 3px;
+    width: 326px;
+    height: 250px;
+    box-shadow: 1px 1px 1px 1px rgb(210, 215, 216);
+}
+
+.Caffe_Americano:hover, .Cold_coffee:hover,.JavaChipFrappuccino:hover,.DoubleChocolateChipFrappuccino:hover,.CreamySpinachandCornPocket:hover,.Cappuccino:hover,.DoubleChocolateChipCookie:hover{
+    box-shadow: 0 5px 10px rgb(169, 169, 169);
+}    
+
+
+.box{
+    position: relative;
+    display: grid;
+    margin: 20px 1px 1px -6px;
+    align-content: center;
+    align-self: flex-start;
+}
+
+#price{
+    position: relative;
+    display: flex;
+    margin-top: 28px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.but #paisa{
+    font-size: 14px;
+    color: black;
+    margin-top: 2px;
+}
+
+.add_item{
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    align-items: center;
+    color: #fff;
+    padding: 7px 16px 12px 18px;
+    border-radius: 50px;
+    background-color: rgb(2, 130, 88);
+    margin: 23px 0px 0px 0px;
+    box-shadow: 0 5px 10px rgb(169, 169, 169);
+}
+
+.add_item:hover{
+    background-color: #005A3C;
+    transition: 0.5s;
+}
+
+.but{
+    position: relative;
+    display: flex;
+    margin: 0;
+}
+
+/* For mobile */
+/* [class*="col-"] {
+    width: 100%;
+} */
+
+@media only screen and (max-width: 425px) {
+    *{
+    margin: 10px 2px 8px 2px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .Caffe_Americano, .Cold_coffee,.JavaChipFrappuccino,.DoubleChocolateChipFrappuccino,.CreamySpinachandCornPocket,.Cappuccino,.DoubleChocolateChipCookie{
+        background-color: #f4f4f4;
+        position: relative;
+        border-radius: 5px;
+        display: flex;
+        margin: 0px 0px 15px 3px;
+        width: 100%;
+        height: 12.5rem;
+        box-shadow: 1px 1px 1px 1px rgb(210, 215, 216);
+    }
+
+    .add_item{
+        display: flex;
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        align-items: center;
+        color: #fff;
+        padding: 7px 16px 12px 18px;
+        border-radius: 50px;
+        background-color: rgb(2, 130, 88);
+        margin: 23px 0px 0px 50px;
+        box-shadow: 0 5px 10px rgb(169, 169, 169);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    *{
+        margin: 10px 2px 8px 2px;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .Caffe_Americano, .Cold_coffee,.JavaChipFrappuccino,.DoubleChocolateChipFrappuccino,.CreamySpinachandCornPocket,.Cappuccino,.DoubleChocolateChipCookie{
+        background-color: #f4f4f4;
+        position: relative;
+        border-radius: 5px;
+        display: flex;
+        margin: 0px 25px 15px 25px;
+        height: 15rem;
+        box-shadow: 1px 1px 1px 1px rgb(210, 215, 216);
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    font-size: 14px;
+}
