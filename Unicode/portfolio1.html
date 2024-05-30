@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="portfolio1.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="toggle">
+    <div id="#aboutme"></div>
+    <div class="user">
+        <img src="MY PHOTO.jpeg" alt="my photo">
+        <h3 class="name">Rahul Kumawat</h3>
+        <p class="post">Aspiring Developer</p>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<div id="menu" class="fas fa-bars fa-times"></div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <h3>HI THERE !</h3>
+    <h1>I'M <span>Rahul Kumawat</span></h1>
+    <p>
+    Want To Be A BETTER SELF,
+    Contribute The Best Of My Abilities & Upskill It
+    </p>
+    <a href="#aboutme"><button class="btn">About me <i class="fas fa-user"></i></button></a>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- aboutme section starts  -->
+
+<section class="aboutmepage" id="aboutme">
+
+<h1 class="heading"> <span>About</span> Me </h1>
+
+<div class="row">
+
+    <div class="info">
+        <h3> <span> Name : </span> Rahul Kumawat </h3>
+        <h3> <span> Age : </span> 18 </h3>
+        <h3> <span> Qualification : </span> Currently Persuing Computer Engineering </h3>
+        <h3> <span> Post : </span> Aspiring Developer </h3>
+        <h3> <span> Language : </span> English , Hindi , Marathi </h3>
+        <h3> <span> Hobbies: </span> Sports , Travelling , etc. </h3>
+        <a href="CV.pdf" target="_blank"><button class="btn"> Download CV <i class="fas fa-download"></i> </button></a>
+    </div>
+
+</div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- education section starts  -->
+
+<section class="education" id="education">
+
+<h1 class="heading"> My <span>Education</span> </h1>
+
+<div class="edu-container">
+
+    <div class="container">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2009-2019</span>
+        <p> 
+            Mother Mary's High school
+            SSC Aggregrate:
+            71.40%
+        </p>
+    </div>
+
+    <div class="container">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2019-2021</span>
+        <p>  
+            SVP Junior College Of
+            Science & Commerce
+            HSC Aggregrate:
+            80%
+        </p>
+    </div>
+
+    <div class="container">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2019-2021</span>
+        <p>
+            The Science Private Hub
+            MHCET,JEE Mains 
+        </p>
+    </div>
+
+    <div class="container">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2021-2025</span>
+        <p>
+            DJ Sanghvi College Of
+            Engineering
+            Computer Engineering
+        </p>
+    </div>
+
+</div>
+
+</section>
+
+<!-- education section ends -->
+
+<!-- Skill section starts  -->
+
+<section class="Skills" id="Skills">
+
+<h1 class="heading"> <span>Skills</span> </h1>
+
+<div class="skill-container">
+
+    <div class="skill-image">
+        <img src="Learning.gif" alt="">
+    </div>
+
+    <div class="skill-image">
+        <img src="Consistency.jpg" alt="">
+    </div>
+
+    <div class="skill-image">
+        <img src="Flexibility.webp" alt="">
+    </div>
+
+    <div class="skill-image">
+        <img src="Programming.webp" alt="">
+    </div>
+
+</div>
+
+</section>
+
+<!-- Skill section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading"> <span>Contact</span> Me </h1>
+
+<div class="row">
+
+    <div class="content">
+
+        <h3 class="title">contact info</h3>
+
+        <form action="" onsubmit="return validateForm()">
+
+            <input type="text" name="fname" id="name" placeholder="name" class="box" required><span class="formerror"></span>
+            <input type="email" name="femail" id="email" placeholder="email" class="box" required><span class="formerror"></span>
+            <input type="phone" name="fphone" id="phone" placeholder="phone number" class="box" required><span class="formerror"></span>
+            <textarea name="message" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+            <button type="submit" class="btn"> Send <i class="fas fa-paper-plane"></i> </button>
+    
+        </form>
+
+        <div class="info">
+            <h3> <i class="fas fa-envelope"></i> rahulkumawat1619@gmail.com </h3>
+            <h3> <i class="fas fa-phone"></i> +91 9969536677 </h3>
+            <h3> <i class="fas fa-map-marker-alt"></i> Thane, India - 401105 </h3>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- scroll top button  -->
+
+<a href="#home" class="scrolltop">
+    <img src="scroll-top.png" alt="scrolltop">
+</a>
+
+
+<!-- custom js file link  -->
+<script src="portfolio.js"></script>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body>
+</html>
